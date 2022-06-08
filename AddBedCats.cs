@@ -119,6 +119,11 @@ namespace WindowsFormsApp1
         {
             populate();
         }
+
+        private void Catsdgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     
 }
