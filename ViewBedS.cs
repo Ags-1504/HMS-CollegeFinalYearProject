@@ -28,7 +28,7 @@ namespace WindowsFormsApp1
         {
             foreach(DataGridViewRow item in Bedsdgv.Rows)
             {
-                if (Convert.ToBoolean(item.Cells[0].Value) == true && item.Cells[0].ReadOnly == false)
+                if (Convert.ToBoolean(item.Cells[0].Value) == true && item.Cells[0].Style.ForeColor != Color.Aqua)
                 {
                     string connstr = ConfigurationManager.ConnectionStrings["DBcs"].ConnectionString;
                     MySqlConnection con = new MySqlConnection(connstr);
@@ -55,10 +55,38 @@ namespace WindowsFormsApp1
                         MessageBox.Show(ex.Message);
                         con.Close();
                     }
+                }else if(Convert.ToBoolean(item.Cells[0].Value) != true && item.Cells[0].Style.ForeColor == Color.Aqua)
+                {
+                    item.Cells[0].Style.ForeColor = Color.Green;
+                    string connstr = ConfigurationManager.ConnectionStrings["DBcs"].ConnectionString;
+                    MySqlConnection con = new MySqlConnection(connstr);
+                    MySqlCommand cmd1, cmd2;
+
+                    string query = "update beds set bed_status = @status where bed_id = @ID";
+                    cmd1 = new MySqlCommand(query, con);
+                    cmd1.Parameters.AddWithValue("@status", false);
+                    cmd1.Parameters.AddWithValue("@ID", item.Cells[1].Value.ToString());
+                    string innerquery = "update bed_category set beds_left = beds_left+1 where category_id = @id";
+                    cmd2 = new MySqlCommand(innerquery, con);
+                    cmd2.Parameters.AddWithValue("@id", item.Cells[2].Value.ToString());
+                    try
+                    {
+                        con.Open();
+                        cmd1.ExecuteNonQuery();
+                        cmd2.ExecuteNonQuery();
+
+                        con.Close();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        con.Close();
+                    }
                 }
                 
             }
-            MessageBox.Show("Beds Reserved. Beds Available Decreased");
+            MessageBox.Show("Beds Reserved/UnReserved...Beds Available Modified");
         }
 
         private void populate()
@@ -78,7 +106,7 @@ namespace WindowsFormsApp1
                 int n = Bedsdgv.Rows.Add();
                 if(Convert.ToBoolean(dr["bed_status"]) == true)
                 {
-                    Bedsdgv.Rows[n].Cells[0].ReadOnly = true;
+                    Bedsdgv.Rows[n].Cells[0].Style.ForeColor = Color.Aqua ;
                 }
                 Bedsdgv.Rows[n].Cells[0].Value = dr["bed_status"];
                 Bedsdgv.Rows[n].Cells[1].Value = dr["bed_id"].ToString();
