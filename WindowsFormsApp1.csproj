@@ -87,6 +87,12 @@
     <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>packages\MySql.Data.8.0.29\lib\net452\ZstdNet.dll</HintPath>
     </Reference>
+    <Reference Include="zxing, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.8\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.8\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddMeds.cs">
@@ -106,6 +112,12 @@
     </Compile>
     <Compile Include="AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmitPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmitPatient.Designer.cs">
+      <DependentUpon>AdmitPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -163,6 +175,12 @@
     <Compile Include="ViewEditMeds.Designer.cs">
       <DependentUpon>ViewEditMeds.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewEditPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEditPatient.Designer.cs">
+      <DependentUpon>ViewEditPatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewEditTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmitPatient.resx">
+      <DependentUpon>AdmitPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -219,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEditMeds.resx">
       <DependentUpon>ViewEditMeds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEditPatient.resx">
+      <DependentUpon>ViewEditPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEditTest.resx">
       <DependentUpon>ViewEditTest.cs</DependentUpon>

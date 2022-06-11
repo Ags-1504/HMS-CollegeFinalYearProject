@@ -367,5 +367,11 @@ namespace WindowsFormsApp1
             UpdateCategories updateCats = new UpdateCategories();
             updateCats.Show();
         }
+
+        private void PatientredgBtn_Click(object sender, EventArgs e)
+        {
+            AdmitPatient admit = new AdmitPatient();
+            admit.Show();
+        }
     }
 }

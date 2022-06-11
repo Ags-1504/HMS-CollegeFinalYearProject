@@ -43,22 +43,22 @@ namespace WindowsFormsApp1
             this.UserBtn = new System.Windows.Forms.Button();
             this.DiagnosticBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.RemoveTestBtn = new System.Windows.Forms.Button();
+            this.RemoveUserBtn = new System.Windows.Forms.Button();
             this.RemoveMedBtn = new System.Windows.Forms.Button();
+            this.RemoveTestBtn = new System.Windows.Forms.Button();
             this.ViewEditTestBtn = new System.Windows.Forms.Button();
             this.AddTestBtn = new System.Windows.Forms.Button();
-            this.AddMedicineBtn = new System.Windows.Forms.Button();
-            this.RemoveUserBtn = new System.Windows.Forms.Button();
-            this.AddUserBtn = new System.Windows.Forms.Button();
             this.ViewEditStockBtn = new System.Windows.Forms.Button();
             this.ViewEditUserBtn = new System.Windows.Forms.Button();
+            this.AddMedicineBtn = new System.Windows.Forms.Button();
+            this.AddUserBtn = new System.Windows.Forms.Button();
             this.ManageBedCatBtn = new System.Windows.Forms.Button();
             this.ViewEditBedBtn = new System.Windows.Forms.Button();
-            this.AddBedBtn = new System.Windows.Forms.Button();
             this.PatientVisitBtn = new System.Windows.Forms.Button();
             this.DischargePatientBtn = new System.Windows.Forms.Button();
             this.ViewEditPatientBtn = new System.Windows.Forms.Button();
             this.PatientredgBtn = new System.Windows.Forms.Button();
+            this.AddBedBtn = new System.Windows.Forms.Button();
             this.LoggedInAs = new System.Windows.Forms.LinkLabel();
             this.GoBackBut = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -275,20 +275,20 @@ namespace WindowsFormsApp1
             this.panel2.Size = new System.Drawing.Size(329, 684);
             this.panel2.TabIndex = 8;
             // 
-            // RemoveTestBtn
+            // RemoveUserBtn
             // 
-            this.RemoveTestBtn.BackColor = System.Drawing.Color.Tan;
-            this.RemoveTestBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RemoveTestBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemoveTestBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RemoveTestBtn.Location = new System.Drawing.Point(63, 464);
-            this.RemoveTestBtn.Name = "RemoveTestBtn";
-            this.RemoveTestBtn.Size = new System.Drawing.Size(217, 72);
-            this.RemoveTestBtn.TabIndex = 15;
-            this.RemoveTestBtn.Text = "REMOVE DIAGNOSTIC";
-            this.RemoveTestBtn.UseVisualStyleBackColor = false;
-            this.RemoveTestBtn.Visible = false;
-            this.RemoveTestBtn.Click += new System.EventHandler(this.RemoveTestBtn_Click);
+            this.RemoveUserBtn.BackColor = System.Drawing.Color.MistyRose;
+            this.RemoveUserBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RemoveUserBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemoveUserBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.RemoveUserBtn.Location = new System.Drawing.Point(64, 463);
+            this.RemoveUserBtn.Name = "RemoveUserBtn";
+            this.RemoveUserBtn.Size = new System.Drawing.Size(217, 74);
+            this.RemoveUserBtn.TabIndex = 9;
+            this.RemoveUserBtn.Text = "REMOVE USER";
+            this.RemoveUserBtn.UseVisualStyleBackColor = false;
+            this.RemoveUserBtn.Visible = false;
+            this.RemoveUserBtn.Click += new System.EventHandler(this.RemoveUserBtn_Click);
             // 
             // RemoveMedBtn
             // 
@@ -304,6 +304,21 @@ namespace WindowsFormsApp1
             this.RemoveMedBtn.UseVisualStyleBackColor = false;
             this.RemoveMedBtn.Visible = false;
             this.RemoveMedBtn.Click += new System.EventHandler(this.RemoveMedBtn_Click);
+            // 
+            // RemoveTestBtn
+            // 
+            this.RemoveTestBtn.BackColor = System.Drawing.Color.Tan;
+            this.RemoveTestBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RemoveTestBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemoveTestBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.RemoveTestBtn.Location = new System.Drawing.Point(63, 464);
+            this.RemoveTestBtn.Name = "RemoveTestBtn";
+            this.RemoveTestBtn.Size = new System.Drawing.Size(217, 72);
+            this.RemoveTestBtn.TabIndex = 15;
+            this.RemoveTestBtn.Text = "REMOVE DIAGNOSTIC";
+            this.RemoveTestBtn.UseVisualStyleBackColor = false;
+            this.RemoveTestBtn.Visible = false;
+            this.RemoveTestBtn.Click += new System.EventHandler(this.RemoveTestBtn_Click);
             // 
             // ViewEditTestBtn
             // 
@@ -335,51 +350,6 @@ namespace WindowsFormsApp1
             this.AddTestBtn.Visible = false;
             this.AddTestBtn.Click += new System.EventHandler(this.AddTestBtn_Click);
             // 
-            // AddMedicineBtn
-            // 
-            this.AddMedicineBtn.BackColor = System.Drawing.Color.LightGray;
-            this.AddMedicineBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddMedicineBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddMedicineBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.AddMedicineBtn.Location = new System.Drawing.Point(64, 116);
-            this.AddMedicineBtn.Name = "AddMedicineBtn";
-            this.AddMedicineBtn.Size = new System.Drawing.Size(217, 63);
-            this.AddMedicineBtn.TabIndex = 10;
-            this.AddMedicineBtn.Text = "ADD MEDICINE";
-            this.AddMedicineBtn.UseVisualStyleBackColor = false;
-            this.AddMedicineBtn.Visible = false;
-            this.AddMedicineBtn.Click += new System.EventHandler(this.AddMedicineBtn_Click);
-            // 
-            // RemoveUserBtn
-            // 
-            this.RemoveUserBtn.BackColor = System.Drawing.Color.MistyRose;
-            this.RemoveUserBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RemoveUserBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemoveUserBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RemoveUserBtn.Location = new System.Drawing.Point(64, 463);
-            this.RemoveUserBtn.Name = "RemoveUserBtn";
-            this.RemoveUserBtn.Size = new System.Drawing.Size(217, 74);
-            this.RemoveUserBtn.TabIndex = 9;
-            this.RemoveUserBtn.Text = "REMOVE USER";
-            this.RemoveUserBtn.UseVisualStyleBackColor = false;
-            this.RemoveUserBtn.Visible = false;
-            this.RemoveUserBtn.Click += new System.EventHandler(this.RemoveUserBtn_Click);
-            // 
-            // AddUserBtn
-            // 
-            this.AddUserBtn.BackColor = System.Drawing.Color.MistyRose;
-            this.AddUserBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddUserBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddUserBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.AddUserBtn.Location = new System.Drawing.Point(64, 116);
-            this.AddUserBtn.Name = "AddUserBtn";
-            this.AddUserBtn.Size = new System.Drawing.Size(217, 63);
-            this.AddUserBtn.TabIndex = 7;
-            this.AddUserBtn.Text = "ADD USER";
-            this.AddUserBtn.UseVisualStyleBackColor = false;
-            this.AddUserBtn.Visible = false;
-            this.AddUserBtn.Click += new System.EventHandler(this.AddUserBtn_Click);
-            // 
             // ViewEditStockBtn
             // 
             this.ViewEditStockBtn.BackColor = System.Drawing.Color.LightGray;
@@ -410,6 +380,36 @@ namespace WindowsFormsApp1
             this.ViewEditUserBtn.Visible = false;
             this.ViewEditUserBtn.Click += new System.EventHandler(this.ViewEditUserBtn_Click);
             // 
+            // AddMedicineBtn
+            // 
+            this.AddMedicineBtn.BackColor = System.Drawing.Color.LightGray;
+            this.AddMedicineBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddMedicineBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddMedicineBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AddMedicineBtn.Location = new System.Drawing.Point(64, 116);
+            this.AddMedicineBtn.Name = "AddMedicineBtn";
+            this.AddMedicineBtn.Size = new System.Drawing.Size(217, 63);
+            this.AddMedicineBtn.TabIndex = 10;
+            this.AddMedicineBtn.Text = "ADD MEDICINE";
+            this.AddMedicineBtn.UseVisualStyleBackColor = false;
+            this.AddMedicineBtn.Visible = false;
+            this.AddMedicineBtn.Click += new System.EventHandler(this.AddMedicineBtn_Click);
+            // 
+            // AddUserBtn
+            // 
+            this.AddUserBtn.BackColor = System.Drawing.Color.MistyRose;
+            this.AddUserBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddUserBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddUserBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AddUserBtn.Location = new System.Drawing.Point(64, 116);
+            this.AddUserBtn.Name = "AddUserBtn";
+            this.AddUserBtn.Size = new System.Drawing.Size(217, 63);
+            this.AddUserBtn.TabIndex = 7;
+            this.AddUserBtn.Text = "ADD USER";
+            this.AddUserBtn.UseVisualStyleBackColor = false;
+            this.AddUserBtn.Visible = false;
+            this.AddUserBtn.Click += new System.EventHandler(this.AddUserBtn_Click);
+            // 
             // ManageBedCatBtn
             // 
             this.ManageBedCatBtn.BackColor = System.Drawing.Color.Khaki;
@@ -439,21 +439,6 @@ namespace WindowsFormsApp1
             this.ViewEditBedBtn.UseVisualStyleBackColor = false;
             this.ViewEditBedBtn.Visible = false;
             this.ViewEditBedBtn.Click += new System.EventHandler(this.ViewEditBedBtn_Click);
-            // 
-            // AddBedBtn
-            // 
-            this.AddBedBtn.BackColor = System.Drawing.Color.Khaki;
-            this.AddBedBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddBedBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddBedBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.AddBedBtn.Location = new System.Drawing.Point(64, 113);
-            this.AddBedBtn.Name = "AddBedBtn";
-            this.AddBedBtn.Size = new System.Drawing.Size(217, 72);
-            this.AddBedBtn.TabIndex = 4;
-            this.AddBedBtn.Text = "ADD BED CATEGORIES";
-            this.AddBedBtn.UseVisualStyleBackColor = false;
-            this.AddBedBtn.Visible = false;
-            this.AddBedBtn.Click += new System.EventHandler(this.AddBedBtn_Click);
             // 
             // PatientVisitBtn
             // 
@@ -510,6 +495,22 @@ namespace WindowsFormsApp1
             this.PatientredgBtn.Text = "ADMIT PATIENT";
             this.PatientredgBtn.UseVisualStyleBackColor = false;
             this.PatientredgBtn.Visible = false;
+            this.PatientredgBtn.Click += new System.EventHandler(this.PatientredgBtn_Click);
+            // 
+            // AddBedBtn
+            // 
+            this.AddBedBtn.BackColor = System.Drawing.Color.Khaki;
+            this.AddBedBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddBedBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddBedBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AddBedBtn.Location = new System.Drawing.Point(64, 113);
+            this.AddBedBtn.Name = "AddBedBtn";
+            this.AddBedBtn.Size = new System.Drawing.Size(217, 72);
+            this.AddBedBtn.TabIndex = 4;
+            this.AddBedBtn.Text = "ADD BED CATEGORIES";
+            this.AddBedBtn.UseVisualStyleBackColor = false;
+            this.AddBedBtn.Visible = false;
+            this.AddBedBtn.Click += new System.EventHandler(this.AddBedBtn_Click);
             // 
             // LoggedInAs
             // 
