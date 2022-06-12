@@ -193,6 +193,12 @@
     <Compile Include="ViewEditUser.Designer.cs">
       <DependentUpon>ViewEditUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="VisitPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisitPatient.Designer.cs">
+      <DependentUpon>VisitPatient.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddMeds.resx">
       <DependentUpon>AddMeds.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEditUser.resx">
       <DependentUpon>ViewEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisitPatient.resx">
+      <DependentUpon>VisitPatient.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

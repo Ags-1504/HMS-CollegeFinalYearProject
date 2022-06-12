@@ -61,6 +61,7 @@ namespace WindowsFormsApp1
             this.AddBedBtn = new System.Windows.Forms.Button();
             this.LoggedInAs = new System.Windows.Forms.LinkLabel();
             this.GoBackBut = new System.Windows.Forms.Button();
+            this.UserIDHidden = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -453,6 +454,7 @@ namespace WindowsFormsApp1
             this.PatientVisitBtn.Text = "VISIT";
             this.PatientVisitBtn.UseVisualStyleBackColor = false;
             this.PatientVisitBtn.Visible = false;
+            this.PatientVisitBtn.Click += new System.EventHandler(this.PatientVisitBtn_Click);
             // 
             // DischargePatientBtn
             // 
@@ -542,6 +544,22 @@ namespace WindowsFormsApp1
             this.GoBackBut.UseVisualStyleBackColor = false;
             this.GoBackBut.Click += new System.EventHandler(this.button1_Click);
             // 
+            // UserIDHidden
+            // 
+            this.UserIDHidden.ActiveLinkColor = System.Drawing.Color.Brown;
+            this.UserIDHidden.AutoSize = true;
+            this.UserIDHidden.BackColor = System.Drawing.Color.Transparent;
+            this.UserIDHidden.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserIDHidden.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.UserIDHidden.LinkColor = System.Drawing.Color.WhiteSmoke;
+            this.UserIDHidden.Location = new System.Drawing.Point(664, 67);
+            this.UserIDHidden.Name = "UserIDHidden";
+            this.UserIDHidden.Size = new System.Drawing.Size(89, 29);
+            this.UserIDHidden.TabIndex = 11;
+            this.UserIDHidden.TabStop = true;
+            this.UserIDHidden.Text = "UserID";
+            this.UserIDHidden.Visible = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -549,6 +567,7 @@ namespace WindowsFormsApp1
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1788, 798);
+            this.Controls.Add(this.UserIDHidden);
             this.Controls.Add(this.GoBackBut);
             this.Controls.Add(this.LoggedInAs);
             this.Controls.Add(this.panel2);
@@ -600,5 +619,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label PatientLabel;
         private System.Windows.Forms.Label BedLabel;
         private System.Windows.Forms.Button GoBackBut;
+        private System.Windows.Forms.LinkLabel UserIDHidden;
     }
 }

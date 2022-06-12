@@ -25,6 +25,13 @@ namespace WindowsFormsApp1
             }
         }
 
+        public string UserID
+        {
+            set
+            {
+                this.UserIDHidden.Text = value;
+            }
+        }
         private void Exit_Click(object sender, EventArgs e)
         {
             Environment.Exit(1);
@@ -372,6 +379,13 @@ namespace WindowsFormsApp1
         {
             AdmitPatient admit = new AdmitPatient();
             admit.Show();
+        }
+
+        private void PatientVisitBtn_Click(object sender, EventArgs e)
+        {
+            VisitPatient visitPat = new VisitPatient();
+            visitPat.Doc = UserIDHidden.Text;
+            visitPat.Show();
         }
     }
 }

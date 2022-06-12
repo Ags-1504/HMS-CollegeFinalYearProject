@@ -64,6 +64,7 @@ namespace WindowsFormsApp1
                     this.Hide();
                     Dashboard dsboard = new Dashboard();
                     dsboard.LoggedInAsLabel = "Logged in As - " + ds.Tables[0].Rows[0][2].ToString();
+                    dsboard.UserID = ds.Tables[0].Rows[0][0].ToString();
                     dsboard.Show();
 
                 }
