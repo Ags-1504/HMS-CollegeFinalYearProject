@@ -78,7 +78,7 @@ namespace WindowsFormsApp1
             this.IDTb.BackColor = System.Drawing.Color.MistyRose;
             this.IDTb.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IDTb.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.IDTb.Location = new System.Drawing.Point(926, 47);
+            this.IDTb.Location = new System.Drawing.Point(781, 29);
             this.IDTb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.IDTb.Name = "IDTb";
             this.IDTb.ReadOnly = true;
@@ -135,7 +135,7 @@ namespace WindowsFormsApp1
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(805, 49);
+            this.label1.Location = new System.Drawing.Point(660, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 33);
@@ -214,7 +214,7 @@ namespace WindowsFormsApp1
             this.label7.Location = new System.Drawing.Point(23, 31);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 27);
+            this.label7.Size = new System.Drawing.Size(126, 29);
             this.label7.TabIndex = 13;
             this.label7.Text = "User Type";
             // 
@@ -222,7 +222,7 @@ namespace WindowsFormsApp1
             // 
             this.UserAddBtn.BackColor = System.Drawing.Color.WhiteSmoke;
             this.UserAddBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserAddBtn.Location = new System.Drawing.Point(784, 422);
+            this.UserAddBtn.Location = new System.Drawing.Point(653, 246);
             this.UserAddBtn.Name = "UserAddBtn";
             this.UserAddBtn.Size = new System.Drawing.Size(167, 51);
             this.UserAddBtn.TabIndex = 14;
@@ -238,7 +238,7 @@ namespace WindowsFormsApp1
             this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1201, 650);
+            this.ClientSize = new System.Drawing.Size(1022, 529);
             this.Controls.Add(this.UserAddBtn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.DocFeeslbl);
