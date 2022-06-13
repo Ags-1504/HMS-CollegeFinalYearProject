@@ -469,6 +469,7 @@ namespace WindowsFormsApp1
             this.DischargePatientBtn.Text = "DISCHARGE";
             this.DischargePatientBtn.UseVisualStyleBackColor = false;
             this.DischargePatientBtn.Visible = false;
+            this.DischargePatientBtn.Click += new System.EventHandler(this.DischargePatientBtn_Click);
             // 
             // ViewEditPatientBtn
             // 

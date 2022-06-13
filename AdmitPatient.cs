@@ -246,7 +246,7 @@ namespace WindowsFormsApp1
             string connstr = ConfigurationManager.ConnectionStrings["DBcs"].ConnectionString;
             MySqlConnection con = new MySqlConnection(connstr);
             MySqlCommand cmd;
-            string query = "insert into patient values(@id, @name, @addr, @phno);";
+            string query = "insert into patient values(@id, @name, @addr, @phno, 1);";
             try
             {
 

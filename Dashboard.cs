@@ -393,5 +393,11 @@ namespace WindowsFormsApp1
             ViewEditPatient patients = new ViewEditPatient();
             patients.Show();
         }
+
+        private void DischargePatientBtn_Click(object sender, EventArgs e)
+        {
+            DischargePatient discharge = new DischargePatient();
+            discharge.Show();
+        }
     }
 }

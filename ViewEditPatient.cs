@@ -123,7 +123,7 @@ namespace WindowsFormsApp1
             string connstr = ConfigurationManager.ConnectionStrings["DBcs"].ConnectionString;
             MySqlConnection con = new MySqlConnection(connstr);
             MySqlCommand cmd;
-            string query = "select patient_id, patient_name from patient;";
+            string query = "select patient_id, patient_name from patient where admitted = 1;";
             MySqlDataReader rdr;
             try
             {
