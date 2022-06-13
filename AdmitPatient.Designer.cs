@@ -58,6 +58,7 @@ namespace WindowsFormsApp1
             // PatientPersonalInfo
             // 
             this.PatientPersonalInfo.BackColor = System.Drawing.Color.Transparent;
+            this.PatientPersonalInfo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PatientPersonalInfo.Controls.Add(this.PatAddTb);
             this.PatientPersonalInfo.Controls.Add(this.Patphnlbl);
             this.PatientPersonalInfo.Controls.Add(this.PatphnnoTb);
@@ -141,6 +142,7 @@ namespace WindowsFormsApp1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.DoctorAssCb);
             this.panel1.Controls.Add(this.DoctorAsslbl);
             this.panel1.Controls.Add(this.AdmDeptCb);
@@ -273,6 +275,7 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1124, 546);
             this.Controls.Add(this.QRcodepic);
             this.Controls.Add(this.label1);

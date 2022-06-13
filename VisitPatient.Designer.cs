@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisitPatient));
             this.panel1 = new System.Windows.Forms.Panel();
             this.PatIDTb = new System.Windows.Forms.TextBox();
             this.PatIDlbl = new System.Windows.Forms.Label();
@@ -65,6 +66,8 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.PatIDTb);
             this.panel1.Controls.Add(this.PatIDlbl);
             this.panel1.Controls.Add(this.PatNamCb);
@@ -116,6 +119,8 @@ namespace WindowsFormsApp1
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.DocCommTb);
             this.panel2.Location = new System.Drawing.Point(21, 214);
             this.panel2.Name = "panel2";
@@ -135,7 +140,7 @@ namespace WindowsFormsApp1
             // 
             this.SelPatlbl.AutoSize = true;
             this.SelPatlbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelPatlbl.Location = new System.Drawing.Point(44, 9);
+            this.SelPatlbl.Location = new System.Drawing.Point(44, 21);
             this.SelPatlbl.Name = "SelPatlbl";
             this.SelPatlbl.Size = new System.Drawing.Size(140, 24);
             this.SelPatlbl.TabIndex = 4;
@@ -145,7 +150,7 @@ namespace WindowsFormsApp1
             // 
             this.DocCommlbl.AutoSize = true;
             this.DocCommlbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DocCommlbl.Location = new System.Drawing.Point(44, 196);
+            this.DocCommlbl.Location = new System.Drawing.Point(44, 204);
             this.DocCommlbl.Name = "DocCommlbl";
             this.DocCommlbl.Size = new System.Drawing.Size(154, 24);
             this.DocCommlbl.TabIndex = 5;
@@ -173,6 +178,8 @@ namespace WindowsFormsApp1
             // 
             // PresMedsPanel
             // 
+            this.PresMedsPanel.BackColor = System.Drawing.Color.Transparent;
+            this.PresMedsPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PresMedsPanel.Controls.Add(this.PreMedsBtn);
             this.PresMedsPanel.Controls.Add(this.label1);
             this.PresMedsPanel.Controls.Add(this.label4);
@@ -300,6 +307,8 @@ namespace WindowsFormsApp1
             // 
             // PresTestspanel
             // 
+            this.PresTestspanel.BackColor = System.Drawing.Color.Transparent;
+            this.PresTestspanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PresTestspanel.Controls.Add(this.button1);
             this.PresTestspanel.Controls.Add(this.label2);
             this.PresTestspanel.Controls.Add(this.TestNameCb);
@@ -354,6 +363,8 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1268, 546);
             this.Controls.Add(this.PresTestspanel);
             this.Controls.Add(this.VisitBtn);

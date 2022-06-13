@@ -387,5 +387,11 @@ namespace WindowsFormsApp1
             visitPat.Doc = UserIDHidden.Text;
             visitPat.Show();
         }
+
+        private void ViewEditPatientBtn_Click(object sender, EventArgs e)
+        {
+            ViewEditPatient patients = new ViewEditPatient();
+            patients.Show();
+        }
     }
 }

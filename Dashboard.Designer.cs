@@ -483,6 +483,7 @@ namespace WindowsFormsApp1
             this.ViewEditPatientBtn.Text = "VIEW/EDIT";
             this.ViewEditPatientBtn.UseVisualStyleBackColor = false;
             this.ViewEditPatientBtn.Visible = false;
+            this.ViewEditPatientBtn.Click += new System.EventHandler(this.ViewEditPatientBtn_Click);
             // 
             // PatientredgBtn
             // 
