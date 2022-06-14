@@ -101,9 +101,9 @@ namespace WindowsFormsApp1
             this.PatIDlbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatIDlbl.Location = new System.Drawing.Point(14, 94);
             this.PatIDlbl.Name = "PatIDlbl";
-            this.PatIDlbl.Size = new System.Drawing.Size(135, 24);
+            this.PatIDlbl.Size = new System.Drawing.Size(101, 24);
             this.PatIDlbl.TabIndex = 5;
-            this.PatIDlbl.Text = "Patient Name";
+            this.PatIDlbl.Text = "Patient ID";
             // 
             // PatNamCb
             // 

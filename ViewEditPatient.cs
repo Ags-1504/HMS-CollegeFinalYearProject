@@ -100,7 +100,7 @@ namespace WindowsFormsApp1
             string connstr = ConfigurationManager.ConnectionStrings["DBcs"].ConnectionString;
             MySqlConnection con = new MySqlConnection(connstr);
             MySqlCommand cmd;
-            string query = "select count(*) from patient;";
+            string query = "select count(*) from patient where admitted = 1;";
             try
             {
                 con.Open();

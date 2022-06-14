@@ -62,6 +62,7 @@ namespace WindowsFormsApp1
             this.LoggedInAs = new System.Windows.Forms.LinkLabel();
             this.GoBackBut = new System.Windows.Forms.Button();
             this.UserIDHidden = new System.Windows.Forms.LinkLabel();
+            this.UserLevelTb = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -562,6 +563,22 @@ namespace WindowsFormsApp1
             this.UserIDHidden.Text = "UserID";
             this.UserIDHidden.Visible = false;
             // 
+            // UserLevelTb
+            // 
+            this.UserLevelTb.ActiveLinkColor = System.Drawing.Color.Brown;
+            this.UserLevelTb.AutoSize = true;
+            this.UserLevelTb.BackColor = System.Drawing.Color.Transparent;
+            this.UserLevelTb.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserLevelTb.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.UserLevelTb.LinkColor = System.Drawing.Color.WhiteSmoke;
+            this.UserLevelTb.Location = new System.Drawing.Point(785, 67);
+            this.UserLevelTb.Name = "UserLevelTb";
+            this.UserLevelTb.Size = new System.Drawing.Size(126, 29);
+            this.UserLevelTb.TabIndex = 12;
+            this.UserLevelTb.TabStop = true;
+            this.UserLevelTb.Text = "UserLevel";
+            this.UserLevelTb.Visible = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -569,6 +586,7 @@ namespace WindowsFormsApp1
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1788, 798);
+            this.Controls.Add(this.UserLevelTb);
             this.Controls.Add(this.UserIDHidden);
             this.Controls.Add(this.GoBackBut);
             this.Controls.Add(this.LoggedInAs);
@@ -622,5 +640,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label BedLabel;
         private System.Windows.Forms.Button GoBackBut;
         private System.Windows.Forms.LinkLabel UserIDHidden;
+        private System.Windows.Forms.LinkLabel UserLevelTb;
     }
 }

@@ -140,7 +140,7 @@ namespace WindowsFormsApp1
                 cmd.ExecuteNonQuery();
                 cmd2.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("Patient Deleted Successfully.");
+                MessageBox.Show("Patient Released Successfully.");
             }
             catch (Exception ex)
             {
