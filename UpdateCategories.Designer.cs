@@ -31,6 +31,7 @@ namespace WindowsFormsApp1
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateCategories));
             this.UpCatBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Catslbl = new System.Windows.Forms.Label();
@@ -47,7 +48,7 @@ namespace WindowsFormsApp1
             // 
             this.UpCatBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.UpCatBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpCatBtn.Location = new System.Drawing.Point(321, 174);
+            this.UpCatBtn.Location = new System.Drawing.Point(321, 185);
             this.UpCatBtn.Name = "UpCatBtn";
             this.UpCatBtn.Size = new System.Drawing.Size(167, 51);
             this.UpCatBtn.TabIndex = 54;
@@ -73,7 +74,7 @@ namespace WindowsFormsApp1
             this.Catslbl.Location = new System.Drawing.Point(297, 0);
             this.Catslbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Catslbl.Name = "Catslbl";
-            this.Catslbl.Size = new System.Drawing.Size(188, 29);
+            this.Catslbl.Size = new System.Drawing.Size(183, 27);
             this.Catslbl.TabIndex = 34;
             this.Catslbl.Text = "Bed Categories";
             // 
@@ -82,7 +83,7 @@ namespace WindowsFormsApp1
             this.Catsdgv.AllowUserToAddRows = false;
             this.Catsdgv.AllowUserToDeleteRows = false;
             this.Catsdgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Catsdgv.BackgroundColor = System.Drawing.Color.AntiqueWhite;
+            this.Catsdgv.BackgroundColor = System.Drawing.Color.Silver;
             this.Catsdgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Catsdgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
             this.Catsdgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -122,16 +123,16 @@ namespace WindowsFormsApp1
             this.CatPricelbl.BackColor = System.Drawing.Color.Transparent;
             this.CatPricelbl.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CatPricelbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CatPricelbl.Location = new System.Drawing.Point(69, 76);
+            this.CatPricelbl.Location = new System.Drawing.Point(41, 75);
             this.CatPricelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CatPricelbl.Name = "CatPricelbl";
-            this.CatPricelbl.Size = new System.Drawing.Size(229, 29);
+            this.CatPricelbl.Size = new System.Drawing.Size(218, 27);
             this.CatPricelbl.TabIndex = 50;
             this.CatPricelbl.Text = "Category Price/day";
             // 
             // CatPriceTb
             // 
-            this.CatPriceTb.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CatPriceTb.BackColor = System.Drawing.Color.Silver;
             this.CatPriceTb.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CatPriceTb.Location = new System.Drawing.Point(366, 73);
             this.CatPriceTb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -145,18 +146,18 @@ namespace WindowsFormsApp1
             this.CatNameLbl.BackColor = System.Drawing.Color.Transparent;
             this.CatNameLbl.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CatNameLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CatNameLbl.Location = new System.Drawing.Point(69, 20);
+            this.CatNameLbl.Location = new System.Drawing.Point(41, 19);
             this.CatNameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CatNameLbl.Name = "CatNameLbl";
-            this.CatNameLbl.Size = new System.Drawing.Size(187, 29);
+            this.CatNameLbl.Size = new System.Drawing.Size(179, 27);
             this.CatNameLbl.TabIndex = 48;
             this.CatNameLbl.Text = "Category Name";
             // 
             // CatNameTb
             // 
-            this.CatNameTb.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CatNameTb.BackColor = System.Drawing.Color.Silver;
             this.CatNameTb.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CatNameTb.Location = new System.Drawing.Point(366, 17);
+            this.CatNameTb.Location = new System.Drawing.Point(366, 19);
             this.CatNameTb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CatNameTb.Name = "CatNameTb";
             this.CatNameTb.Size = new System.Drawing.Size(352, 32);
@@ -166,6 +167,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 716);
             this.Controls.Add(this.UpCatBtn);
             this.Controls.Add(this.panel1);

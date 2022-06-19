@@ -31,11 +31,12 @@ namespace WindowsFormsApp1
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewBedS));
             this.Bedsdgv = new System.Windows.Forms.DataGridView();
-            this.UpdateCatBtn = new System.Windows.Forms.Button();
             this.Reserved = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.BedID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UpdateCatBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Bedsdgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +45,7 @@ namespace WindowsFormsApp1
             this.Bedsdgv.AllowUserToAddRows = false;
             this.Bedsdgv.AllowUserToDeleteRows = false;
             this.Bedsdgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Bedsdgv.BackgroundColor = System.Drawing.Color.Khaki;
+            this.Bedsdgv.BackgroundColor = System.Drawing.Color.Silver;
             this.Bedsdgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Bedsdgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
             this.Bedsdgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -80,18 +81,6 @@ namespace WindowsFormsApp1
             this.Bedsdgv.Size = new System.Drawing.Size(782, 642);
             this.Bedsdgv.TabIndex = 34;
             // 
-            // UpdateCatBtn
-            // 
-            this.UpdateCatBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.UpdateCatBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateCatBtn.Location = new System.Drawing.Point(317, 688);
-            this.UpdateCatBtn.Name = "UpdateCatBtn";
-            this.UpdateCatBtn.Size = new System.Drawing.Size(167, 51);
-            this.UpdateCatBtn.TabIndex = 47;
-            this.UpdateCatBtn.Text = "UPDATE ";
-            this.UpdateCatBtn.UseVisualStyleBackColor = false;
-            this.UpdateCatBtn.Click += new System.EventHandler(this.UpdateCatBtn_Click);
-            // 
             // Reserved
             // 
             this.Reserved.HeaderText = "Reserved?";
@@ -112,10 +101,23 @@ namespace WindowsFormsApp1
             this.CategoryID.Name = "CategoryID";
             this.CategoryID.ReadOnly = true;
             // 
+            // UpdateCatBtn
+            // 
+            this.UpdateCatBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.UpdateCatBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateCatBtn.Location = new System.Drawing.Point(317, 688);
+            this.UpdateCatBtn.Name = "UpdateCatBtn";
+            this.UpdateCatBtn.Size = new System.Drawing.Size(167, 51);
+            this.UpdateCatBtn.TabIndex = 47;
+            this.UpdateCatBtn.Text = "UPDATE ";
+            this.UpdateCatBtn.UseVisualStyleBackColor = false;
+            this.UpdateCatBtn.Click += new System.EventHandler(this.UpdateCatBtn_Click);
+            // 
             // ViewBedS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 751);
             this.Controls.Add(this.UpdateCatBtn);
             this.Controls.Add(this.Bedsdgv);

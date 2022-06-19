@@ -25,6 +25,25 @@ namespace WindowsFormsApp1
             }
         }
 
+        public string UserID
+        {
+            set
+            {
+                this.UserIDHidden.Text = value;
+            }
+        }
+
+        public string UserLevel
+        {
+            set
+            {
+                this.UserLevelTb.Text = value;
+            }
+            get
+            {
+                return UserLevelTb.Text;
+            }
+        }
         private void Exit_Click(object sender, EventArgs e)
         {
             Environment.Exit(1);
@@ -179,8 +198,17 @@ namespace WindowsFormsApp1
 
         private void AddUserBtn_Click(object sender, EventArgs e)
         {
-            AddUser addUser = new AddUser();
-            addUser.Show();
+            if (UserLevel == "staff")
+            {
+                AddUser addUser = new AddUser();
+                addUser.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            
         }
 
         private void BackToLogInlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -192,50 +220,117 @@ namespace WindowsFormsApp1
 
         private void ViewEditUserBtn_Click(object sender, EventArgs e)
         {
-            ViewEditUser viewEditUser = new ViewEditUser();
-            viewEditUser.Show();
+            if (UserLevel == "staff")
+            {
+                ViewEditUser viewEditUser = new ViewEditUser();
+                viewEditUser.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            
         }
 
         private void RemoveUserBtn_Click(object sender, EventArgs e)
         {
-            RemoveUser ru = new RemoveUser();
-            ru.Show();
+            if (UserLevel == "staff")
+            {
+                RemoveUser ru = new RemoveUser();
+                ru.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            
         }
 
         private void AddTestBtn_Click(object sender, EventArgs e)
         {
-            AddTest addtest = new AddTest();
-            addtest.Show();
+            if (UserLevel == "staff")
+            {
+                AddTest addtest = new AddTest();
+                addtest.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void ViewEditTestBtn_Click(object sender, EventArgs e)
         {
-            ViewEditTest viewEditTest = new ViewEditTest();
-            viewEditTest.Show();
+            if (UserLevel == "staff")
+            {
+                ViewEditTest viewEditTest = new ViewEditTest();
+                viewEditTest.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void RemoveTestBtn_Click(object sender, EventArgs e)
         {
-            RemoveTest removeTest = new RemoveTest();
-            removeTest.Show();
+            if (UserLevel == "staff")
+            {
+                RemoveTest removeTest = new RemoveTest();
+                removeTest.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void AddMedicineBtn_Click(object sender, EventArgs e)
         {
-            AddMeds addMedicine = new AddMeds();
-            addMedicine.Show();
+            if (UserLevel == "staff")
+            {
+                AddMeds addMedicine = new AddMeds();
+                addMedicine.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void ViewEditStockBtn_Click(object sender, EventArgs e)
         {
-            ViewEditMeds viewEditMeds = new ViewEditMeds();
-            viewEditMeds.Show();
+            if (UserLevel == "staff")
+            {
+                ViewEditMeds viewEditMeds = new ViewEditMeds();
+                viewEditMeds.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            
         }
 
         private void RemoveMedBtn_Click(object sender, EventArgs e)
         {
-            RemoveMeds removeMeds = new RemoveMeds();
-            removeMeds.Show();
+            if (UserLevel == "staff")
+            {
+                RemoveMeds removeMeds = new RemoveMeds();
+                removeMeds.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -352,20 +447,100 @@ namespace WindowsFormsApp1
 
         private void AddBedBtn_Click(object sender, EventArgs e)
         {
-            AddBedCats addBedCats = new AddBedCats();
-            addBedCats.Show();
+            if (UserLevel == "staff")
+            {
+                AddBedCats addBedCats = new AddBedCats();
+                addBedCats.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void ViewEditBedBtn_Click(object sender, EventArgs e)
         {
-            ViewBedS viewBedStatus = new ViewBedS();
-            viewBedStatus.Show();
+            if (UserLevel == "staff")
+            {
+                ViewBedS viewBedStatus = new ViewBedS();
+                viewBedStatus.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void ManageBedCatBtn_Click(object sender, EventArgs e)
         {
-            UpdateCategories updateCats = new UpdateCategories();
-            updateCats.Show();
+            if (UserLevel == "staff")
+            {
+                UpdateCategories updateCats = new UpdateCategories();
+                updateCats.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+
+        private void PatientredgBtn_Click(object sender, EventArgs e)
+        {
+            if (UserLevel == "staff")
+            {
+                AdmitPatient admit = new AdmitPatient();
+                admit.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
+        }
+
+        private void PatientVisitBtn_Click(object sender, EventArgs e)
+        {
+            if(UserLevel == "doctor")
+            {
+                VisitPatient visitPat = new VisitPatient();
+                visitPat.Doc = UserIDHidden.Text;
+                visitPat.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            
+        }
+
+        private void ViewEditPatientBtn_Click(object sender, EventArgs e)
+        {
+            if (UserLevel == "doctor" || UserLevel == "staff")
+            {
+                ViewEditPatient patients = new ViewEditPatient();
+                patients.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void DischargePatientBtn_Click(object sender, EventArgs e)
+        {
+            if (UserLevel == "staff")
+            {
+                DischargePatient discharge = new DischargePatient();
+                discharge.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorised to this utility.", "Permission denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

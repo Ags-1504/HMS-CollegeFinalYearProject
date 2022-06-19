@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
                 {
                     con.Open();
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Test Added successfully in Medicines.");
+                    MessageBox.Show("Item Added successfully in Medicines.");
                     foreach (var c in this.Controls)
                     {
                         if (c is TextBox)

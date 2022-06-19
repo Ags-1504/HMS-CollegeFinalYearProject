@@ -30,20 +30,21 @@ namespace WindowsFormsApp1
             string connstr = ConfigurationManager.ConnectionStrings["DBcs"].ConnectionString;
             MySqlConnection con = new MySqlConnection(connstr);
             string query = "";
+            
             if(UserRoleCmb.SelectedItem == null)
             {
                 MessageBox.Show("Please select/fill all fields!");
             }
             else if (UserRoleCmb.SelectedItem.ToString() == "admin")
             {
-                query = "Select * from admins where admin_id=@id and admin_password=@pass";
+                query = "Select * from admins where admin_phoneno=@id and admin_password=@pass";
             }else if(UserRoleCmb.SelectedItem.ToString() == "doctor")
             {
-                query = "Select * from doctor where doctor_id=@id and doctor_password=@pass";
+                query = "Select * from doctor where doctor_phoneno=@id and doctor_password=@pass";
             }
             else if (UserRoleCmb.SelectedItem.ToString() == "staff")
             {
-                query = "Select * from staff where staff_id=@id and staff_password=@pass";
+                query = "Select * from staff where staff_phoneno=@id and staff_password=@pass";
             }
             
 
@@ -64,6 +65,8 @@ namespace WindowsFormsApp1
                     this.Hide();
                     Dashboard dsboard = new Dashboard();
                     dsboard.LoggedInAsLabel = "Logged in As - " + ds.Tables[0].Rows[0][2].ToString();
+                    dsboard.UserID = ds.Tables[0].Rows[0][0].ToString();
+                    dsboard.UserLevel = UserRoleCmb.SelectedItem.ToString();
                     dsboard.Show();
 
                 }
